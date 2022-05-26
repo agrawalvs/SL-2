@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <h1 style="font-size: 50px; margin-left: 10%; color: rgb(230, 129, 52); border-left: solid 3px black;padding-left: 10px;">Registration form</h1>
+    <style>
+        #b1{
+            border-radius: 5px;
+            background-color: #ddd4d4;
+            padding: 20px;
+            width: fit-content;
+        }
+        input[type=text], select, input[type=password], input[type=email]{
+            width: 400px;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 15px;
+        }
+        input[type=submit], input[type=reset] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+        input[type=radio], input[type=checkbox]{
+            height: 15px;
+            width: 15px;
+            background-color: lightgray;
+            margin-left: 10px;
+        }
+        label{
+            font-size: 18px;
+        }
+
+    </style>
+    
+</head>
+<body >
+    <form style="margin-left: 10%;" id="form">
+        <div id="b1">
+            <div>
+            <input type="text" name="Name"placeholder="Name"><br>
+            <input type="text" name="Batch" placeholder="Batch"><br>
+            <input type="text" name="WS" placeholder="Working status"><br>
+            <select name="Courses" id="">
+                        <option value="None" selected>none</option>
+                        <option value="Computer Science">Computer Science</option>
+                        <option value="Computer Science Data Management" >Computer Science Data Management</option>
+                        <option value="Computer Science cyber security">Computer Science Cyber security</option>
+                        <option value="Computer Science AIML">Computer Science AIML</option>
+            </select> <br><br>
+            <label for="" >Gender  </label><br>
+            <input type="radio" name="Gender" style="margin-left: 60px;">
+                     <label for="male">Male</label>
+            <input type="radio" name="Gender" id="">
+                     <label for="female">Female</label><br><br><br>
+            
+            <label for="" >Subjects  </label><br>
+                     <input type="checkbox" name="maths" style="margin-left: 60px;">
+                     <label for="maths">Maths</label>
+                     <input type="checkbox" name="Physic" checked><label>Physic</label>
+                     <input type="checkbox" name="Chemistry" checked><label>Chemistry</label>
+                     <input type="checkbox" name="Biology"><label for="">Biology</label> <br>
+            <br><br>
+            <label for="" >Short description </label><br>
+            <textarea name="description" id="" cols="50" rows="5" style="margin-top: 10px;">Enter the text</textarea><br><br>
+            <label for="">File type</label><br>
+                <input type="file" name="File Upload" accept="image/*" style="margin-top: 8px; font-size: 20px;margin-left: 60px;"><br><br><br>
+            
+        </div>
+         
+        <div id="b2">
+            <input type="text" name="User_Id" placeholder="User Id"><br>
+            <input type="password" name="Password" id="password" placeholder="Password" minlength="8"><br>
+            <input type="email" name="Email" id="" placeholder="Email"><br><br>   
+            <input type="submit" value="Submit" name="Submit">
+            <input type="reset" value="clear" name="reset"><br>
+        
+        </div>
+        </div>
+        
+        
+    </form>
+</body>
+</html>
