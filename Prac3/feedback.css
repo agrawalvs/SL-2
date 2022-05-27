@@ -1,0 +1,109 @@
+body{
+    background-color: rgb(202, 211, 211);
+}
+
+h1{
+    font-size: 96px; 
+    color: tomato; 
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2{
+    font-size: 72px; 
+    color:aliceblue; 
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#head {
+    display: flex;
+    background-color: rgb(47, 23, 71);
+    width: 100%;
+    padding: 20px;
+    margin: 20px;
+    margin-right: 20px;
+}
+
+#head img {
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#feedback {
+    background-color: white;
+    border-radius: 2%;
+    padding: 10px;
+    margin: 15px;
+    width: 100%;
+}
+
+#b1 {
+    display: flex; 
+    border-radius: 5px; 
+    border: solid 2px;
+    margin: 10px;
+}
+#seller{
+    padding-right: 100px;
+    margin-left: 10px;
+}
+
+#product p{
+    width: 500px;
+}
+
+#product img{
+    width: 70px;
+    height: 70px;
+}
+
+#rating{
+    margin: 10px;
+}
+
+#rating img{
+    filter: grayscale(100%);
+    height: 40px;
+    width: 40px;
+}
+
+#rating img:checked{
+    filter: none;
+}
+
+input[type="checkbox"] {
+    content: url('img/star.jfif');
+    filter: grayscale(100%);
+    appearance: none;
+    width: 40px;
+    height: 40px;
+}
+
+input[type="checkbox"]:checked {
+    content: url('img/star.jfif');
+    filter: none;
+    width: 40px;
+    height: 40px;
+}
+#comment{
+    border-radius: 5px;
+    border: solid 2px;
+    margin: 10px;
+    padding: 10px;
+}
+
+textarea{
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+input[type="submit"]{
+    font-size: 20px;
+    padding: 15px 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(242, 144, 23);
+    color: rgb(51, 30, 103);
+}

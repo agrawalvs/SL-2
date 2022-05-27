@@ -1,0 +1,76 @@
+body{
+    background-color: rgb(202, 211, 211);
+}
+ 
+h1{
+    font-size: 96px; 
+    color: tomato; 
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2{
+    font-size: 72px; 
+    color:aliceblue; 
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#head {
+    display: flex;
+    background-color: rgb(47, 23, 71);
+    width: 100%;
+    padding: 20px;
+    margin: 20px;
+    margin-right: 20px;
+}
+
+#head img {
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.component{
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.component #product {
+    padding-right: 30px ;
+    border-right: solid 2px;
+    height: 300px;
+    width: 300px;
+}
+
+.component #detail {
+    margin-left: 15px;
+    display: block;
+}
+
+#rating img{
+    width: 20px;
+    height: 20px;
+}
+
+#rating #not_checked {
+ filter: grayscale(100%);
+}
+
+#deal{
+    font-size: 17px;
+    background-color: rgb(172, 6, 6);
+    width: fit-content;
+    padding: 5px;
+    color: rgb(233, 233, 153);
+}
+
+#price a {
+    color: rgb(200, 45, 17);
+    font-size: 22px;
+}
