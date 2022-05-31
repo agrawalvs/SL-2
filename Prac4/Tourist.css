@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url("img/Head.jpg.jpg");
+    background-size: cover;
+    background-position:center ;
+    position: relative;
+    overflow:scroll ;
+    background-attachment: fixed;
+}
+
+.logo{
+    /* margin-top: 20px; */
+    width: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#nav{
+    width: 85%;
+    /* height: 15%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2%;
+    position: fixed;
+    top: 0;
+    margin-left: 8%;
+    margin-top: 20px;
+}
+
+#nav h1{
+    font-style: italic;
+    font-family: cursive;
+    font-size: 65px;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+#Head button{
+    color: black;
+    padding: 15px 25px;
+    background: transparent;
+    border: 3px solid;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+}
+
+#nav a{
+    color: black;
+}
+
+#content {
+    /* display: inline-flex; */
+    top: 30%;
+    left: 8%;
+    z-index: 2;
+    margin-left: 40px;
+}
+
+#content h1{
+    font-size: 80px;
+    margin: 10px 0 30px;
+}
+
+.main-container {
+    margin:300px 30px;
+}
+
+.inner-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60vh;
+}
+
+.Places{
+    width: 700px;
+    height: fit-content;
+    background-color: white;
+    padding: 20px 50px;
+    border-radius: 15px;
+    margin-bottom: 100px;
+}
+
+.Places h1{
+    font-style: italic;
+    font-family: cursive;
+    font-size: 58px;
+    text-align: center;
+    background: linear-gradient( red, rgb(179, 210, 20), rgb(48, 202, 50), rgb(7, 174, 186), rgb(34, 12, 100));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin-bottom: 30px;
+}
+
+.Places img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.Places p{
+    font-style: italic;
+    font-family: cursive;
+    font-size: 18px;
+}
+
+.Places summary{
+    cursor: pointer;
+}
