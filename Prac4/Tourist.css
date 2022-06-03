@@ -102,11 +102,27 @@ body{
     font-family: cursive;
     font-size: 58px;
     text-align: center;
-    background: linear-gradient( red, rgb(179, 210, 20), rgb(48, 202, 50), rgb(7, 174, 186), rgb(34, 12, 100));
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
     margin-bottom: 30px;
+    text-transform: uppercase;
+    background-image: linear-gradient(
+        -225deg,
+        #231557 0%,
+        #44107a 29%,
+        #ff1361 67%,
+        #fff800 100%
+    );
+    background-size: 200% auto;
+    color: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
 }
+
+@keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
 
 .Places img{
     width: 100%;
@@ -121,4 +137,20 @@ body{
 
 .Places summary{
     cursor: pointer;
+}
+
+#iframe_container{
+    position: relative;
+    width: 800px;
+    height: 907px;
+    overflow: hidden;
+}
+
+
+.iframe_content {
+    position: absolute;
+    top: -270px;
+    left: -200px;
+    width: 659px;
+    height: 1200px;
 }
