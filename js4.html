@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Employee</title>
+</head>
+<body>
+    <script>
+        class Employee{
+            constructor (name, eid, salary, exp){
+                this.name = name;
+                this.eid = eid;
+                this.salary = salary;
+                this.exp = exp;
+            }
+            addincrement() {
+                if(this.exp > 5){
+                    return this.salary += (0.2)*this.salary; 
+                }
+                else{
+                    return this.salary += (0.15)*this.salary;
+                }
+                
+            }
+        }
+
+        arr = [];
+        input = prompt("Enter no. of employee:");
+        for(var i=0;i<input;i++){
+            var name = prompt("Enter name:");
+            
+        let info1 = new Employee("A", 1, 130, 4);
+        let info2 = new Employee("B", 2, 103, 1);
+        let info3 = new Employee("C", 3, 133, 10);
+        let info4 = new Employee("D", 4, 153, 7);
+        let info5 = new Employee("E", 5, 613, 2);
+
+        alert("Salary of employee A " + info1.addincrement());
+        alert("Salary of employee B " + info2.addincrement());
+        alert("Salary of employee C " + info3.addincrement());
+        alert("Salary of employee D " + info4.addincrement());
+        alert("Salary of employee E " + info5.addincrement());
+    </script>
+</body>
+</html>
