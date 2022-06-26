@@ -6,4 +6,6 @@ else if (a >= 80 & a <= 90)
 else if (a >= 66 & a < 80)
     alert("Your Grade is B");
 else if (a >= 50 & a <= 65)
-    alert("Your Grade is C");    
+    alert("Your Grade is C");  
+else
+alert("Your Grade is f");  

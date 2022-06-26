@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Class Employee</title>
 </head>
 <body>
@@ -26,22 +23,21 @@
             }
         }
 
-        arr = [];
-        input = prompt("Enter no. of employee:");
+        var input = prompt("Enter no. of employee:");
+        info = [input];
         for(var i=0;i<input;i++){
             var name = prompt("Enter name:");
-            
-        let info1 = new Employee("A", 1, 130, 4);
-        let info2 = new Employee("B", 2, 103, 1);
-        let info3 = new Employee("C", 3, 133, 10);
-        let info4 = new Employee("D", 4, 153, 7);
-        let info5 = new Employee("E", 5, 613, 2);
-
-        alert("Salary of employee A " + info1.addincrement());
-        alert("Salary of employee B " + info2.addincrement());
-        alert("Salary of employee C " + info3.addincrement());
-        alert("Salary of employee D " + info4.addincrement());
-        alert("Salary of employee E " + info5.addincrement());
+            var id = prompt("Enter id:");
+            sal = parseInt(prompt("Enter salary:"));
+            var exp = prompt("Enter Experience:");
+            info[i] = new Employee(name, id, sal, exp);
+        }
+        
+        for(var i=0;i<input;i++){
+            alert("\nEmployee Name :" + info[i].name
+                + "\nold Salary of employee A :" + info[i].salary
+                + "\nnew Salary of employee A :" + info[i].addincrement());
+        }
     </script>
 </body>
 </html>
