@@ -1,54 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Registration form</title>
+
+<html >
+    <head>
     <h1 style="font-size: 50px; margin-left: 10%; color: rgb(230, 129, 52); border-left: solid 3px black;padding-left: 10px;">Registration form</h1>
+    <title>Exam Registration</title>
     <link rel="stylesheet" href="form.css">
-
-</head>
-<body >
-    <form style="margin-left: 10%;" id="form">
+    </head>
+    <body >    
         <div id="b1">
-            <div>
-            <h2>Personal Information</h2>
-            <input type="text" name="Name"placeholder="Name"><br>
-            <input type="number" name="" id="" placeholder="Mobile no."><br>
-            <label for="">Date :</label>
-            <input type="date" ><br><br>
-
-            <label for="" >Gender : </label><br>
-            <input type="radio" name="Gender" style="margin-left: 60px;">
-            <label for="male">Male</label>
-            <input type="radio" name="Gender" id="">
-            <label for="female">Female</label><br><br><br><hr>
+            <section id = "Personal">
+                <h2 >Personal Information:</h2>
+                <form name="register" >
+                   
+                    <table>
+                    <tr>
+                    <td><input type = "text" placeholder="Name" name = "sname" ><p id="nval" style="display:inline;"></p></td>
+                    </tr>
+                    <tr>
+                    <td><input type = "email" name = "Email" placeholder="Email" maxlength = 30/><p id="eval" style="display:inline;"></p></td>
+                    </tr>
+                    <tr>
+                    <td><input type = "text" placeholder="Mobile No." name = "Contact" maxlength = 10/><p id="conct" style="display:inline;"></p></td>
+                    </tr>
+                    </table>
+                    <tr>
+                    <td> Date of Birth:<input type = "date" name="age" style="margin-left: 20px ;"/><p id="ageval" style="display:inline;"></p></td>
+                    </tr>
+                    <br><br><hr><br>
+                </form>
+            </section>
             
-            <h2>Educational Information</h2>
-            <label for="" >Subjects  :</label><br>
-                     <input type="checkbox" name="maths" style="margin-left: 60px;">
-                     <label for="maths">Maths</label>
-                     <input type="checkbox" name="Physic" checked><label>Physic</label>
-                     <input type="checkbox" name="Chemistry" checked><label>Chemistry</label>
-                     <input type="checkbox" name="Biology"><label for="">Biology</label> <br>
-            <br><br>
-            <label for="">Xth Percentage :</label><br>
-            <input type="number" name="" id="" placeholder=""><br>
-            <label for="">XIIth Percentage :</label><br>
-            <input type="number" name="" id="" placeholder=""><br><hr><br><br>
+            <section id = "#Educational">
+                    <h2 >Educational Information:</h2>
+                <form name="register1" action="reg.html">
+                   
+                    <table>
+                    <tr>
+                    <td><input type = "text" name = "markx" placeholder="Xth percentage"  maxlength = 3/><p id="x" style="display:inline;"></p></td>
+                    </tr>
+                    <tr>
+                    <td><input type = "text" placeholder="XIIth percentage" name = "markxii"  maxlength = 3/><p id="xii" style="display:inline;"></p></td>
+                    </tr>    
+                   </table>
+                    <br><br><hr><br>
+                </form>
+            </section>
 
-            
-        </div>
-         
-        <div id="b2">
-            <input type="text" name="User_Id" placeholder="User Id"><br>
-            <input type="password" name="Password" id="password" placeholder="Password" minlength="8"><br>
-            <input type="email" name="Email" id="" placeholder="Email"><br><br>   
-            <input type="submit" value="Submit" name="Submit">
-            <input type="reset" value="clear" name="reset"><br>
+            <section id = "Payment">
+                <h2>Payment Information</h2>
+
+                <form name="register2">
+                    <label  >Payment Mode :</label><br>
+                    <input type="radio" name="Mode" onclick = "card()" style="margin-left: 60px;">
+                    <label >Card</label><br>
+                    <input type="radio" name="Mode" id="" onclick = "upipay()" style="margin-left: 60px;">
+                    <label >UPI ID</label><br>
+                    <section id = "card pay" style = "visibility:hidden">
+                    <input type = "number" name = "cdno" placeholder="Card No." maxlength = 12 minlength="12"/>
+                    </section>
+                    <section id = "upi pay" style = "visibility:hidden">
+                    <input type = "text" name = "upi" placeholder="UPI Id" maxlength = 30/>
+                    </section>
+                    <br><br><hr><br>
+
+                    <div id="b2">
+                        <input type="text" name="User_Id" placeholder="User Id"><br>
+                        <input type="password" name="Password" id="password" placeholder="Password" minlength="8"><br>
+                        <input type="submit" value="Submit" name="Submit">
+                        <input type="reset" value="clear" name="reset"><br>
+                    
+                    </div>                    
         
-        </div>
+                </form>
         </div>
         
+        <script src="form.js"></script>
         
-    </form>
-</body>
+    </body>
 </html>
